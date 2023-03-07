@@ -9,25 +9,24 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
 
 // creazione 5 numeri randomici unici
-let numeriDom = document.getElementById('numeri')
+const numeriDom = document.getElementById('numeri');
 let listaNumeriRandomUnivoci = []; 
 for(let i = 0; i < 5; i++){
     let numeroGenerato = generateUniqueRandomNumber(listaNumeriRandomUnivoci, 1, 100);
     listaNumeriRandomUnivoci.push(numeroGenerato);
-    console.log(i);
+    
     numeriDom.innerHTML = listaNumeriRandomUnivoci
 
 
 
-}
-
-for (let i = 0; i < 5; i++){
-    
-    console.log(listaNumeriRandomUnivoci[i]);
-
-
 
 }
+// scomparsa numeri da memorizzare
+setTimeout(function(){
+    numeriDom.innerHTML = "";
+}, 5000)
+
+
 
 // funzione che genra 5 numeri casuali unici
 function generateUniqueRandomNumber(numsBlacklist, min, max){
@@ -45,4 +44,12 @@ function generateUniqueRandomNumber(numsBlacklist, min, max){
     return randomInt
 }
 
-//
+// funzione che fa comparire per 30 secondi
+
+
+// set timeout 30s
+
+
+// chiedi i numeri all' utente
+let numeriUtente;
+
