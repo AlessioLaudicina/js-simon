@@ -21,10 +21,14 @@ for(let i = 0; i < 5; i++){
 
 
 }
-// scomparsa numeri da memorizzare
+// scomparsa numeri da memorizzare dopo 30 sec
 setTimeout(function(){
     numeriDom.innerHTML = "";
-}, 5000)
+}, 30000)
+
+setTimeout(function(){
+     sceltaUtente = prompt('Inserisci il numero')
+}, 31000)
 
 
 
@@ -44,12 +48,13 @@ function generateUniqueRandomNumber(numsBlacklist, min, max){
     return randomInt
 }
 
-// funzione che fa comparire per 30 secondi
 
 
-// set timeout 30s
+// funzione per chiedere i 5 numeri all' utente
 
 
-// chiedi i numeri all' utente
-let numeriUtente;
+
+
+
+
 
